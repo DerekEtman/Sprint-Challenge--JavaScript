@@ -113,7 +113,7 @@ Log the result of your new array. */
 
 const contactInfo = [];
 
-  graduates.forEach(function (input){
+  graduates.forEach((input) => {
     contactInfo.push (`${input.first_name} ${input.email}`)
 
   })
@@ -151,7 +151,7 @@ The zoo wants to display both the scientific name and the animal name in front o
 */
 const animalNames = [];
 
-  zooAnimals.forEach(function(twoNames){
+  zooAnimals.forEach((twoNames) => {
     animalNames.push(`${twoNames.animal_name} ${twoNames.scientific_name}`)
   })
   
