@@ -57,20 +57,24 @@ const velociraptor = new Dino({
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log(tyrannosaurus.weight);
+
+  console.log(tyrannosaurus.weight);
 
 // What was the diet of a velociraptor?
-console.log(velociraptor.diet);
+
+  console.log(velociraptor.diet);
 
 // How long was a stegosaurus?
-console.log(stegosaurus.height);
+
+  console.log(stegosaurus.height);
 
 // What time period did tyrannosaurus live in?
-console.log(tyrannosaurus.period);
+
+  console.log(tyrannosaurus.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log(tyrannosaurus.call());
+  console.log(tyrannosaurus.call());
 
 
 // ==== Arrays ====
@@ -93,11 +97,11 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 
-// const universities = [];
 
 const universities = graduates.map(uni => uni.university);
 
 console.log(universities.sort())
+
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
@@ -105,6 +109,8 @@ The resulting contact information should have a space between the first name and
 Name email@example.com
 
 Log the result of your new array. */
+
+
 const contactInfo = [];
 
   graduates.forEach(function (input){
