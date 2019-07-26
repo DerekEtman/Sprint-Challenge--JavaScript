@@ -6,29 +6,71 @@
   object name, diet, weight, length, period
 */
 
+class Dino{
+  constructor(arr){
+    this.name = arr.name,
+    this.diet = arr.diet,
+    this.weight = arr.weight,
+    this.height = arr.height,
+    this.period = arr.period,
+    this.roar = arr.roar
+  }
+  call(){
+    return `${this.name} says ${this.roar}`;
+  }
+}
+
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
 
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
 
 // velociraptor, carnivorous, 15kg, 1.8m, Late Cretaceous
 
+const tyrannosaurus = new Dino({
+  name:'tyrannosaurus',
+  diet:'carnivorous',
+  weight:'7000kg',
+  height:'12m',
+  period:'Late Cretaceous',
+  roar:'RAWERSRARARWERSARARARRRR!',
+})
+
+const stegosaurus = new Dino({
+  name:'stegosaurus',
+  diet:'herbivorous',
+  weight:'2000kg',
+  height:'9m',
+  period:'Late Jurrasic',
+
+})
+
+const velociraptor = new Dino({
+  name:'velociraptor',
+  diet:'carnivorous',
+  weight:'15kg',
+  height:'1.8m',
+  period:'Late Cretaceous',
+})
+
+
+
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+console.log(tyrannosaurus.weight);
 
 // What was the diet of a velociraptor?
-console.log();
+console.log(velociraptor.diet);
 
 // How long was a stegosaurus?
-console.log();
+console.log(stegosaurus.height);
 
 // What time period did tyrannosaurus live in?
-console.log();
+console.log(tyrannosaurus.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+console.log(tyrannosaurus.call());
 
 
 // ==== Arrays ====
@@ -48,9 +90,14 @@ const graduates = [{"id":1,"first_name":"Cynde","university":"Missouri Southern 
 
 /* Request 1: Create a new array called universities that contains all the universities in the graduates array.  
 
+
 Once you have the new array created, sort the universities alphabetically and log the result. */
-const universities = [];
-console.log(universities)
+
+// const universities = [];
+
+const universities = graduates.map(uni => uni.university);
+
+console.log(universities.sort())
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
